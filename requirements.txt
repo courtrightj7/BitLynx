@@ -1,4 +1,3 @@
 Flask==0.12.1
 wheel==0.30.0
-unixodbc-devel==2.3.4
-git+https://github.com/mkleehammer/pyodbc.git
+pyodbc==3.0.7
