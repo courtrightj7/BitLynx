@@ -1,5 +1,4 @@
 Flask==0.12.1
 wheel==0.30.0
-pyodbc from wheel
-D:\home\python27\wheelhouse\pyodbc-4.0.21-cp27-cp27m-win_amd64.whl
+pyodbc from wheel pyodbc-4.0.21-cp27-cp27m-win_amd64.whl
 
