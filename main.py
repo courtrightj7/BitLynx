@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 import pyodbc
+from Utils import *
 app = Flask(__name__)
 
 tasks = [
@@ -19,7 +20,13 @@ tasks = [
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
-    return jsonify({'tasks': tasks})
+    try:
+        conn = startConnection('CryptoLogger')
+        x = True
+    except:
+        x = False
+    
+    return jsonify({'DBConnection': x})
 
 if __name__ == '__main__':
     app.run(debug=True)
