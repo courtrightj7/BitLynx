@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 import pyodbc
-from Utils import *
+#from Utils import *
 app = Flask(__name__)
 
 tasks = [
@@ -18,7 +18,7 @@ tasks = [
     }
 ]
 
-@app.route('/todo/api/v1.0/tasks', methods=['GET'])
+@app.route('/test', methods=['GET'])
 def get_tasks():
    
     
