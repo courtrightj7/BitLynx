@@ -20,13 +20,9 @@ tasks = [
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
-    try:
-        conn = startConnection('CryptoLogger')
-        x = True
-    except:
-        x = False
+   
     
-    return jsonify({'DBConnection': x})
+    return jsonify({'DBConnection': "TEST"})
 
 if __name__ == '__main__':
     app.run(debug=True)
